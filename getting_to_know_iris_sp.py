@@ -26,7 +26,7 @@ df = user_input_features()
 st.subheader('Insert Parameters')
 st.write(df)
 
-loaded_model = pickle.load(open("IrisPrediction2.h5", "rb"))
+modelIrisClass = pickle.load(open("IrisPrediction2.h5", "rb"))
 prediction = modelIrisClass.predict(df)
 prediction_proba = modelIrisClass.predict_proba(df)
 
